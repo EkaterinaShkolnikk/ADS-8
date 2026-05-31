@@ -95,8 +95,8 @@ class BST {
       });
     return vec;
   }
- 
+
   bool isEmpty() const { return root == nullptr; }
 };
- 
+
 #endif  // INCLUDE_BST_H_
