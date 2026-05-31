@@ -5,7 +5,7 @@
 #include <utility>
 #include <vector>
 #include "bst.h"
- 
+
 void makeTree(BST<std::string>& tree, const char* filename) {
   std::ifstream file(filename);
   if (!file) {
@@ -31,7 +31,7 @@ void makeTree(BST<std::string>& tree, const char* filename) {
   }
   file.close();
 }
- 
+
 void printFreq(BST<std::string>& tree) {
   std::vector<std::pair<std::string, int>> freq = tree.getAllSortedByFreq();
   for (const auto& p : freq) {
